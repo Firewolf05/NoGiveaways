@@ -10,7 +10,7 @@ module.exports = class scamLinkBan extends Plugin {
       usage: '{c} [user id or ping]',
       executor: (args) => ({
         send: true,
-        result: `-ra ${args} no giveaways`
+        result: `-ra ${args} 808265422334984203`
       })
     });
   }
