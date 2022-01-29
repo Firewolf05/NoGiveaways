@@ -4,7 +4,7 @@ const { Plugin } = require('powercord/entities');
 module.exports = class scamLinkBan extends Plugin {
   async startPlugin () {
     powercord.api.commands.registerCommand({
-      command: 'ng',
+      command: 'nogiveaways',
       description: 'gives no giveaways role in mb',
       usage: '{c} [user id or ping]',
       executor: (args) => ({
@@ -15,6 +15,6 @@ module.exports = class scamLinkBan extends Plugin {
   }
 
   pluginWillUnload () {
-    powercord.api.commands.unregisterCommand('ng');
+    powercord.api.commands.unregisterCommand('nogiveaways');
   }
 };
