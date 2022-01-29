@@ -1,7 +1,7 @@
 const { Plugin } = require('powercord/entities');
 
 
-module.exports = class scamLinkBan extends Plugin {
+module.exports = class noGiveaways extends Plugin {
   async startPlugin () {
     powercord.api.commands.registerCommand({
       command: 'nogiveaways',
